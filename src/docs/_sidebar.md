@@ -2,4 +2,4 @@
 
 <md-toc-search paths="README"></md-toc>
 
-<md-toc path="/" min-depth="2" max-depth="2"></md-toc>
+<md-toc class="collapsible" path="/" max-depth="2"></md-toc>

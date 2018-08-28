@@ -1,9 +1,6 @@
 import { environment } from './environments/environment';
 
-import {
-  defaultRemarkPlugins,
-  mermaid, mermaidHook, prism
-} from '@swimlane/docspa-core';
+import { docspaRemarkPreset, prism, runtime, mermaid } from '@swimlane/docspa-remark-preset';
 
 export const config = {
   name: 'DocSPA Quickstart',
@@ -18,10 +15,10 @@ export const config = {
   ],
   coverpage: '_coverpage.md',
   plugins: [
-    mermaidHook
   ],
   remarkPlugins: [
-    ...defaultRemarkPlugins,
+    ...docspaRemarkPreset,
+    runtime,
     mermaid,
     prism
   ],
@@ -29,16 +26,6 @@ export const config = {
   ],
   environment
 };
-
-// these are auto-detected plugins
-if (window['mermaid']) {
-  config.plugins.push(mermaidHook);
-  config.remarkPlugins.push(mermaid);
-}
-
-if (window['Prism']) {
-  config.remarkPlugins.push(prism);
-}
 
 if (window['EditOnGithubPlugin']) {
   config.plugins.push(window['EditOnGithubPlugin'].create('https://github.com/swimlane/docspa/blob/master/src/docs/'));
