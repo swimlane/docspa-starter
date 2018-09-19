@@ -24,7 +24,10 @@ export const config = {
   ],
   runtimeModules: [
   ],
-  environment
+  environment,
+  theme: {
+    '--theme-color-secondary-light': '#bdffe1'
+  }
 };
 
 if (window['EditOnGithubPlugin']) {
