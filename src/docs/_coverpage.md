@@ -1,4 +1,4 @@
-![](./logo.png){ data-no-zoom="true" }
+![](./assets/logo.png){ data-no-zoom="true" width="200px" }
 
 <h2>DocSPA Quickstart <small><env-var var="version"><env-var></small></h2>
 

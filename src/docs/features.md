@@ -72,7 +72,7 @@ i> Additional plugins can be added in the `docspa.config.ts` configuration file.
 | A warning
 
 [[figure | **Figure 1: Figure Title**]]
-| ![](./logo.png)
+| ![](./assets/logo.png)
 
 [[caption | **Table 1: Table Title**]]
 | | Tables        | Are           | Cool  |
@@ -214,7 +214,7 @@ The default remark plugins include [remark-attr](https://github.com/arobase-che/
 ```markdown { playground }
 *Doc*{style="color:red; font-size: large"}*SPA*{style="color:blue"}
 
-![](./logo.png){ width="300px" style="border: 10px solid lightgrey; padding: 10px;"}
+![](./assets/logo.png){ width="300px" style="border: 10px solid lightgrey; padding: 10px;"}
 ```
 
 ### Classes (Badges)
@@ -284,27 +284,7 @@ Or by adding `{ run }` in the fenced code language line:
 Use `{ playground }` to create a section containing both the code and the runtime result:
 
 ```html { playground }
-<div style="width: 100%; height: 200px">
-  <ngx-charts-bar-vertical
-      [legend]="true"
-      [xAxis]="true"
-      [yAxis]="true"
-      [results]="[
-        {
-          'name': 'Germany',
-          'value': 8940000
-        },
-        {
-          'name': 'USA',
-          'value': 5000000
-        },
-        {
-          'name': 'France',
-          'value': 7200000
-        }
-      ]">
-  </ngx-charts-bar-vertical>
-</div>
+<button (click)="count = !count ? 1 : count + 1">Click me: {{count || 0}}</button>
 ```
 
 i> The components available within a runtime element are controlled by the `runtimeModules` array in the `docspa.config.ts` configuration file.
@@ -363,7 +343,7 @@ DocSPA supports many docsify plugins
 <small>using `//unpkg.com/docsify/lib/plugins/zoom-image.min.js`</small>
 
 ```markdown { playground }
-![](./logo.png)
+![](./assets/logo.png)
 ```
 
 ?> Add the `data-no-zoom` attribute to exclude an image `![](./logo.png){ data-no-zoom="true" }`

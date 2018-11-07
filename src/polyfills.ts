@@ -43,7 +43,7 @@ import 'core-js/es6/reflect';
 
 /** Evergreen browsers require these. **/
 // Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
-import 'core-js/es7/reflect';
+
 
 
 /**
@@ -86,7 +86,8 @@ import '@webcomponents/custom-elements/src/native-shim';
 import '@webcomponents/custom-elements/custom-elements.min';
 
 import smoothscroll from 'smoothscroll-polyfill';
-import * as process from 'process';
 
 smoothscroll.polyfill();
-window['process'] = process;
+
+window['process'] = window['process'] || require('process/browser');
+window['global'] = window['global'] || window;

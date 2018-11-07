@@ -7,12 +7,12 @@ export const config = {
   basePath: 'docs/',
   homepage: 'README.md',
   notFoundPage: '_404.md',
-  sideLoad: [
-    '_sidebar.md',
-    '_navbar.md',
-    '_sidebar2.md',
-    '_footer.md',
-  ],
+  sideLoad: {
+    sidebar: '_sidebar.md',
+    navbar: '_navbar.md',
+    rightSidebar: '/_sidebar2.md',
+    footer: '/_footer.md'
+  },
   coverpage: '_coverpage.md',
   plugins: [
   ],
@@ -31,5 +31,7 @@ export const config = {
 };
 
 if (window['EditOnGithubPlugin']) {
-  config.plugins.push(window['EditOnGithubPlugin'].create('https://github.com/swimlane/docspa/blob/master/src/docs/'));
+  const editPlugin = window['EditOnGithubPlugin']
+    .create('https://github.com/swimlane/docspa-quickstart/blob/master/src/docs/')
+  config.plugins.push(editPlugin);
 }

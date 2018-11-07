@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Location, LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { DocspaCoreModule } from '@swimlane/docspa-core';
 
@@ -18,7 +18,7 @@ import { config } from '../docspa.config';
   ],
   providers: [
     Location,
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    { provide: LocationStrategy, useClass: PathLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
