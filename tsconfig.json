@@ -14,7 +14,7 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "types": ["@paperist/types-remark"],
+    "types": [],
     "lib": [
       "es2017",
       "dom"

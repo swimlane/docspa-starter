@@ -2,7 +2,7 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": ["@paperist/types-remark", "@types/node"]
+    "types": ["@types/node"]
   },
   "exclude": [
     "src/test.ts",
