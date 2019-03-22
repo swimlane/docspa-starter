@@ -1,9 +1,9 @@
 {
   "name": "my-docspa-project",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4300",
     "build": "ng build",
     "build:release": "cross-env NODE_ENV=production ng build --prod --no-aot --no-build-optimizer",
     "test": "ng test",
