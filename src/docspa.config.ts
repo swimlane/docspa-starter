@@ -1,6 +1,6 @@
 import { environment } from './environments/environment';
 
-import { docspaRemarkPreset, prism, runtime, mermaid } from '@swimlane/docspa-remark-preset';
+// import { docspaRemarkPreset, prism, runtime, mermaid } from '@swimlane/docspa-remark-preset';
 
 export const config = {
   name: 'DocSPA Quickstart',
@@ -16,18 +16,18 @@ export const config = {
   coverpage: '_coverpage.md',
   plugins: [
   ],
-  remarkPlugins: [
+  /* remarkPlugins: [
     ...docspaRemarkPreset,
     runtime,
     mermaid,
     prism
   ],
   runtimeModules: [
-  ],
+  ], */
   environment,
-  theme: {
+  /* theme: {
     '--theme-color-secondary-light': '#bdffe1'
-  }
+  } */
 };
 
 if (window['EditOnGithubPlugin']) {
