@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --theme-color: #42b983;
+  --theme-color-secondary-light: #bdffe1;
+  --cover-background-color: linear-gradient(to left bottom, hsl(28, 100%, 85%) 0%,hsl(149, 100%, 85%) 100%);
+}
+
 section.cover {
   background: linear-gradient(to left bottom, hsl(28, 100%, 85%) 0%,hsl(149, 100%, 85%) 100%);
 }

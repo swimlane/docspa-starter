@@ -6,15 +6,14 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
-import { plugins, preset, prism, mermaid } from '@swimlane/docspa-remark-preset';
+import { preset } from '@swimlane/docspa-remark-preset';
 
 import {
   DocspaCoreModule,
   EmbedStackblitzModule,
-  UseDocsifyPluginsModule,
+  UseDocsifyPluginsModule as DocsifyPluginsModule,
   RuntimeContentModule,
   MarkdownModule,
-  ThemeModule,
   MarkdownElementsModule
 } from '@swimlane/docspa-core';
 
@@ -33,28 +32,14 @@ import { config } from '../docspa.config';
     LoadingBarHttpClientModule,
     LoggerModule.forRoot({ level: NgxLoggerLevel.WARN }),
     DocspaCoreModule.forRoot(config),
-    MarkdownModule.forRoot({
-      ...preset,
-      plugins: [
-        ...plugins,
-        mermaid,
-        prism
-      ]
-    }),
+    MarkdownModule.forRoot(preset),
     MarkdownElementsModule.forRoot(),
     RuntimeContentModule.forRoot({
       imports: [
         CommonModule,
       ]
     }),
-    ThemeModule.forRoot({
-      theme: {
-        '--theme-color': '#42b983',
-        '--theme-color-secondary-light': '#bdffe1',
-        '--cover-background-color': 'linear-gradient(to left bottom, hsl(28, 100%, 85%) 0%,hsl(149, 100%, 85%) 100%)'
-      }
-    }),
-    UseDocsifyPluginsModule,
+    DocsifyPluginsModule,
     EmbedStackblitzModule
   ],
   providers: [
