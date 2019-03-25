@@ -4,6 +4,8 @@
   --theme-color: #42b983;
   --theme-color-secondary-light: #bdffe1;
   --cover-background-color: linear-gradient(to left bottom, hsl(28, 100%, 85%) 0%,hsl(149, 100%, 85%) 100%);
+ --sidebar-border-width: 1px;
+ --sidebar-border-color: #e3e3e3;
 }
 
 section.cover {

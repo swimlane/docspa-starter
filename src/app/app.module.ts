@@ -11,7 +11,7 @@ import { preset } from '@swimlane/docspa-remark-preset';
 import {
   DocspaCoreModule,
   EmbedStackblitzModule,
-  UseDocsifyPluginsModule as DocsifyPluginsModule,
+  DocsifyPluginsModule,
   RuntimeContentModule,
   MarkdownModule,
   MarkdownElementsModule
