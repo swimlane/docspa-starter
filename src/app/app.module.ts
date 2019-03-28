@@ -10,7 +10,6 @@ import { preset } from '@swimlane/docspa-remark-preset';
 
 import {
   DocspaCoreModule,
-  EmbedStackblitzModule,
   DocsifyPluginsModule,
   RuntimeContentModule,
   MarkdownModule,
@@ -20,6 +19,7 @@ import {
 import { AppComponent } from './app.component';
 
 import { config } from '../docspa.config';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { config } from '../docspa.config';
     LoadingBarModule.forRoot(),
     LoadingBarHttpClientModule,
     LoggerModule.forRoot({ level: NgxLoggerLevel.WARN }),
-    DocspaCoreModule.forRoot(config),
+    DocspaCoreModule.forRoot(config, environment),
     MarkdownModule.forRoot(preset),
     MarkdownElementsModule.forRoot(),
     RuntimeContentModule.forRoot({
@@ -39,8 +39,7 @@ import { config } from '../docspa.config';
         CommonModule,
       ]
     }),
-    DocsifyPluginsModule,
-    EmbedStackblitzModule
+    DocsifyPluginsModule
   ],
   providers: [
     Location,
