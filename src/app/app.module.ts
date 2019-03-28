@@ -21,6 +21,14 @@ import { AppComponent } from './app.component';
 import { config } from '../docspa.config';
 import { environment } from '../environments/environment';
 
+const plugins = [];
+
+if (window['EditOnGithubPlugin']) {
+  const editPlugin = window['EditOnGithubPlugin']
+    .create('https://github.com/swimlane/docspa-starter/blob/master/src/docs/');
+  plugins.push(editPlugin);
+}
+
 @NgModule({
   declarations: [
     AppComponent
@@ -39,7 +47,9 @@ import { environment } from '../environments/environment';
         CommonModule,
       ]
     }),
-    DocsifyPluginsModule
+    DocsifyPluginsModule.forRoot({
+      plugins
+    })
   ],
   providers: [
     Location,
