@@ -13,8 +13,11 @@ import {
   DocsifyPluginsModule,
   RuntimeContentModule,
   MarkdownModule,
-  MarkdownElementsModule
+  MarkdownElementsModule,
+  MARKDOWN_CONFIG_TOKEN
 } from '@swimlane/docspa-core';
+
+import { DocspaStackblitzModule } from '@swimlane/docspa-stackblitz';
 
 import { AppComponent } from './app.component';
 
@@ -40,7 +43,7 @@ if (window['EditOnGithubPlugin']) {
     LoadingBarHttpClientModule,
     LoggerModule.forRoot({ level: NgxLoggerLevel.WARN }),
     DocspaCoreModule.forRoot(config, environment),
-    MarkdownModule.forRoot(preset),
+    MarkdownModule.forRoot(),
     MarkdownElementsModule.forRoot(),
     RuntimeContentModule.forRoot({
       imports: [
@@ -49,11 +52,13 @@ if (window['EditOnGithubPlugin']) {
     }),
     DocsifyPluginsModule.forRoot({
       plugins
-    })
+    }),
+    DocspaStackblitzModule
   ],
   providers: [
     Location,
-    { provide: LocationStrategy, useClass: PathLocationStrategy }
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
+    { provide: MARKDOWN_CONFIG_TOKEN, useFactory: () => preset }
   ],
   bootstrap: [AppComponent]
 })
