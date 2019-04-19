@@ -1,32 +1,37 @@
-# My DocSPA Project
+# Quick start
 
-## Introduction
+## Install from GitHub
 
-DocSPA (like it's inspiration docsify) generates your documentation website on the fly. Unlike GitBook, it does not generate static HTML files. Instead, it loads and parses your Markdown files and displays them as website. Unlike docsify, DocSPA generates an Angular SPA, which allows embedded Angular components and excellent [custom element support](https://custom-elements-everywhere.com/#angular).
+```bash
+git clone https://github.com/swimlane/docspa-starter.git
+cd docspa-starter
+npm install
+npm start
+```
 
-See the [Quick start](https://swimlane.github.io/DocSPA/#/quickstart#quick-start) for details on how to get up and running quickly.
+i> If you want to hack on DocSPA core components clone `https://github.com/swimlane/DocSPA` instead.  If you would like to setup DocSPA in your own angular cli app see [angular-cli-install](angular-cli-install).
 
-## How it works
+## View Your Site
 
-A DocSPA site is a <abbr title="Single Page Application">SPA</abbr> powered by Angular and the Angular CLI.  If you've used the Angular CLI before you already know a lot about the DocSPA infrastructure.  If you built Angular applications before, customizing a DocSPA site will be a familiar experience.  If you are not familiar with Angular, no worries, out-of-the-box DocSPA provides a simple experience so you can get right to your [content](https://swimlane.github.io/DocSPA/#/content#content).
+```bash
+npm start
+```
 
-As mentioned DocSPA is a Angular SPA.  It uses Angular CLI tools for the build process.  Once built and deployed the DocSPA site will generate HTML content on-the-fly from your markdown content.  Markdown files are converted to HTML using (remark)[https://remark.js.org/].  Remark plugins (both DocSPA internal and third-party) handle all markdown extensions.  In addition, the DocSPA site supports custom elements (one of the key features of the Web Components standard) and includes custom elements that allows [live Angular examples](ttps://swimlane.github.io/DocSPA/#/features#runtime-content) within markdown!
+At that point you will see a message to "open your browser on http://localhost:4200/"
 
-## Features
+## Customization
 
-- [Ability to leverage Angular and Web Components in markdown](ttps://swimlane.github.io/DocSPA/#/features#custom-elements)
-- [Remark plugins with defaults optimized for technical documentation](ttps://swimlane.github.io/DocSPA/#/features#markdown-extensions)
-- [Compatible with many docsify plugins and themes](ttps://swimlane.github.io/DocSPA/#/features#docsify-plugins)
+This DocSPA instance can be modified change configuration to teh various DocSPA modules.  See [module](modules) for details on each module and configuration options.
 
-[Examples](ttps://swimlane.github.io/DocSPA/#/features#features)
+## Writing Content
 
-## Todo
+Modify content in the 'src/docs' directory.  See [content](content) for more details.
 
-DocSPA is a work in progress.  DocSPA was developed by [Swimlane](http://swimlane.com/) for use in Swimlane projects.
+## Deploy to gh-pages
 
-## Why not X?
-
-DocSPA is not SEO-friendly, if you need a pregenerate SEO-friendly site without live Angular support you might try [GitBook](https://www.gitbook.com/).  If you don't need a pregenerate site nor embedded Angular code (or prefer Vue) you might try [Docsify](https://docsify.js.org/#/).
+```bash
+npm run deploy
+```
 
 ## Credits
 

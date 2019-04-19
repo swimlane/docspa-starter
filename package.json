@@ -1,6 +1,6 @@
 {
   "name": "docspa-starter",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4300",
@@ -29,9 +29,9 @@
     "@ngx-loading-bar/core": "^2.1.2",
     "@ngx-loading-bar/http-client": "^2.1.2",
     "@stackblitz/sdk": "^1.2.0",
-    "@swimlane/docspa-core": "file:../DocSPA/swimlane-docspa-core-2.0.0.tgz",
-    "@swimlane/docspa-remark-preset": "file:../DocSPA/swimlane-docspa-remark-preset-2.0.0.tgz",
-    "@swimlane/docspa-stackblitz": "file:../DocSPA/swimlane-docspa-stackblitz-0.0.1.tgz",
+    "@swimlane/docspa-core": "^3.0.0",
+    "@swimlane/docspa-remark-preset": "^2.0.1",
+    "@swimlane/docspa-stackblitz": "^3.0.0",
     "@webcomponents/custom-elements": "^1.2.1",
     "core-js": "^2.5.4",
     "deepmerge": "^3.2.0",
