@@ -78,6 +78,7 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+import '@ungap/global-this';
 
 // Used for browsers with partially native support of Custom Elements
 import '@webcomponents/custom-elements/src/native-shim';
@@ -90,4 +91,4 @@ import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
 window['process'] = window['process'] || require('process/browser');
-window['global'] = window['global'] || window;
+window['global'] = globalThis as any;
