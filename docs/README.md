@@ -18,7 +18,7 @@ As mentioned DocSPA is a Angular SPA.  It uses Angular CLI tools for the build p
 - [Remark plugins with defaults optimized for technical documentation](ttps://swimlane.github.io/DocSPA/#/features#markdown-extensions)
 - [Compatible with many docsify plugins and themes](ttps://swimlane.github.io/DocSPA/#/features#docsify-plugins)
 
-[Examples](ttps://swimlane.github.io/DocSPA/#/features#features)
+[Examples](features#features)
 
 ## Todo
 
