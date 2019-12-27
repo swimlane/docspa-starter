@@ -40,7 +40,7 @@ if (window['EditOnGithubPlugin']) {
   imports: [
     CommonModule,
     BrowserModule,
-    LoadingBarModule.forRoot(),
+    LoadingBarModule,
     LoadingBarHttpClientModule,
     LoggerModule.forRoot({ level: NgxLoggerLevel.WARN }),
     DocspaCoreModule.forRoot(config, environment),

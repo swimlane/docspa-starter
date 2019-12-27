@@ -90,5 +90,6 @@ import smoothscroll from 'smoothscroll-polyfill';
 
 smoothscroll.polyfill();
 
-window['process'] = window['process'] || require('process/browser');
 window['global'] = globalThis as any;
+window['process'] = window['process'] || require('process/browser');
+window['Buffer'] = window['Buffer'] || require('buffer').Buffer;
