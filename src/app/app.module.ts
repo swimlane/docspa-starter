@@ -23,6 +23,7 @@ import { AppComponent } from './app.component';
 
 import { config } from '../docspa.config';
 import { environment } from '../environments/environment';
+import { AppRoutingModule } from './app-routing.module';
 
 const plugins = [];
 
@@ -53,7 +54,8 @@ if (window['EditOnGithubPlugin']) {
     DocsifyPluginsModule.forRoot({
       plugins
     }),
-    DocspaStackblitzModule
+    DocspaStackblitzModule,
+    AppRoutingModule
   ],
   providers: [
     Location,
