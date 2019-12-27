@@ -46,11 +46,11 @@ if (window['EditOnGithubPlugin']) {
     DocspaCoreModule.forRoot(config, environment),
     MarkdownModule.forRoot(),
     MarkdownElementsModule.forRoot(),
-    // RuntimeContentModule.forRoot({
-    //   imports: [
-    //     CommonModule,
-    //   ]
-    // }),
+    RuntimeContentModule.forRoot({
+      imports: [
+        CommonModule,
+      ]
+    }),
     DocsifyPluginsModule.forRoot({
       plugins
     }),

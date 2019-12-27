@@ -1,18 +1,14 @@
 {
   "name": "docspa-starter",
-  "version": "4.0.0",
+  "version": "5.0.0-1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 4300",
-    "start:aot": "ng serve --port 4300 --aot",
+    "start": "ng serve",
     "build": "ng build",
-    "build:release": "cross-env NODE_ENV=production ng build --prod --no-aot --no-build-optimizer",
-    "build:release:aot": "cross-env NODE_ENV=production ng build --prod",
+    "deploy": "ng deploy",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "predeploy": "npm run build:release",
-    "deploy": "angular-cli-ghpages --dir ./dist/my-docspa-project"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -64,7 +60,7 @@
     "@types/node": "^12.11.1",
     "@types/unist": "^2.0.3",
     "@types/vfile": "^3.0.2",
-    "angular-cli-ghpages": "^0.5.3",
+    "angular-cli-ghpages": "^0.6.1",
     "codelyzer": "^5.1.2",
     "cross-env": "^5.2.0",
     "jasmine-core": "^3.3.0",
