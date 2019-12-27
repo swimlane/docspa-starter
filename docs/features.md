@@ -243,4 +243,10 @@ Use the `[[env]]` shortcode to display variables defined in the `environment` pr
 Production? <md-env var="production" />
 ```
 
+## Runnable Embedded Angular
+
+~~~markdown { playground }
+```html { run context='{ "count": 0 }' }
+<button (click)="count = count + 1">Click me: {{count}}</button>
+```
 
