@@ -40,7 +40,7 @@
     "rehype-stringify": "^5.0.0",
     "remark-rehype": "^4.0.0",
     "remark-stringify": "^6.0.4",
-    "rxjs": "^6.5.3",
+    "rxjs": "^6.5.4",
     "smoothscroll-polyfill": "^0.4.3",
     "tapable": "^1.1.1",
     "throttleit": "^1.0.0",
