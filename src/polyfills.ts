@@ -78,12 +78,11 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
-// import 'intersection-observer';
+import 'intersection-observer';
 import '@ungap/global-this';
 
-// import smoothscroll from 'smoothscroll-polyfill';
-
-// smoothscroll.polyfill();
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
 
 window['global'] = globalThis as any;
 window['process'] = window['process'] || require('process/browser');
