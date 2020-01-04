@@ -78,17 +78,12 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+// import 'intersection-observer';
 import '@ungap/global-this';
 
-// Used for browsers with partially native support of Custom Elements
-import '@webcomponents/custom-elements/src/native-shim';
+// import smoothscroll from 'smoothscroll-polyfill';
 
-// Used for browsers without a native support of Custom Elements
-import '@webcomponents/custom-elements/custom-elements.min';
-
-import smoothscroll from 'smoothscroll-polyfill';
-
-smoothscroll.polyfill();
+// smoothscroll.polyfill();
 
 window['global'] = globalThis as any;
 window['process'] = window['process'] || require('process/browser');

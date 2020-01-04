@@ -245,8 +245,13 @@ Production? <md-env var="production" />
 
 ## Runnable Embedded Angular
 
-~~~markdown { playground }
 ```html { run context='{ "count": 0 }' }
 <button (click)="count = count + 1">Click me: {{count}}</button>
 ```
+
+~~~markdown {}
+```html { run context='{ "count": 0 }' }
+<button (click)="count = count + 1">Click me: {{count}}</button>
+```
+~~~
 

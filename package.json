@@ -24,8 +24,8 @@
     "@ngx-loading-bar/core": "^4.2.0",
     "@ngx-loading-bar/http-client": "^4.2.0",
     "@stackblitz/sdk": "^1.2.0",
-    "@swimlane/docspa-core": "^5.0.0-3",
-    "@swimlane/docspa-remark-preset": "^2.0.1",
+    "@swimlane/docspa-core": "^5.0.0-6",
+    "@swimlane/docspa-remark-preset": "^5.0.0-0",
     "@swimlane/docspa-stackblitz": "^5.0.0-1",
     "@ungap/global-this": "^0.3.1",
     "@webcomponents/custom-elements": "^1.2.1",
@@ -75,5 +75,8 @@
     "ts-node": "~5.0.1",
     "tslint": "^5.14.0",
     "typescript": "~3.6.4"
+  },
+  "browser": {
+    "crypto": false
   }
 }
