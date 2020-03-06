@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
@@ -58,8 +57,6 @@ if (window['EditOnGithubPlugin']) {
     AppRoutingModule
   ],
   providers: [
-    Location,
-    { provide: LocationStrategy, useClass: PathLocationStrategy },
     { provide: MARKDOWN_CONFIG_TOKEN, useFactory: () => preset }
   ],
   bootstrap: [AppComponent]
