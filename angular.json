@@ -28,7 +28,37 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "tapable",
+              "remark-parse",
+              "remark-rehype",
+              "rehype-stringify",
+              "rehype-raw",
+              "vfile",
+              "path",
+              "lunr",
+              "url",
+              "remark-frontmatter",
+              "remark-sectionize",
+              "remark-slug",
+              "unist-util-visit",
+              "unified",
+              "@rigor789/remark-autolink-headings",
+              "remark-attr",
+              "remark-gemoji-to-emoji",
+              "remark-html-emoji-image",
+              "remark-html-katex",
+              "remark-math",
+              "remark-parse-yaml",
+              "vfile-reporter"
+            ],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -48,12 +78,11 @@
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
-              "aot": false,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": false
+              "vendorChunk": false
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
