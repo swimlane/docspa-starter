@@ -6,6 +6,8 @@
   --cover-background-color: linear-gradient(to left bottom, hsl(28, 100%, 85%) 0%,hsl(149, 100%, 85%) 100%);
  --sidebar-border-width: 1px;
  --sidebar-border-color: #e3e3e3;
+ --base-background-color: #F5F7F9;
+ --sidebar-background: #F5F7F9;
 }
 
 :root { /* sidebar pagelinks */

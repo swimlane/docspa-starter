@@ -26,7 +26,8 @@
               "src/.nojekyll"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/index.scss"
             ],
             "scripts": [],
             "allowedCommonJsDependencies": [
