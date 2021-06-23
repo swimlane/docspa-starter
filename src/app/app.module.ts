@@ -23,6 +23,7 @@ import { AppComponent } from './app.component';
 import { config } from '../docspa.config';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+import { DocspaSearchModule } from '@swimlane/docspa-search';
 
 const plugins = [];
 
@@ -54,7 +55,8 @@ if (window['EditOnGithubPlugin']) {
       plugins
     }),
     DocspaStackblitzModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DocspaSearchModule
   ],
   providers: [
     { provide: MARKDOWN_CONFIG_TOKEN, useFactory: () => preset }
