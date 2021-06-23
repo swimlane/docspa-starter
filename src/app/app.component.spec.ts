@@ -15,7 +15,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        LoadingBarModule.forRoot(),
+        LoadingBarModule,
         LoggerModule.forRoot({ level: NgxLoggerLevel.WARN }),
         DocspaCoreModule.forRoot(config)
       ],
